@@ -6,6 +6,65 @@ html, body {
     margin: 0;
     padding: 0;
 }
+/* Contact us */
+#Contact  {
+  
+    margin: auto;
+    /* text-align: center; */
+}
+
+
+ #container-contact { 
+    text-align:center;
+
+   /* background-color: rgb(240, 41, 51); */
+  
+  
+ }
+#text , #email{ 
+    display: inline;
+
+ } 
+#container-contact> h4{
+     text-align: center; 
+    /* margin: 0; */
+}
+    
+ #container-contact > p{
+     /* margin: 0; */
+    text-align: center;
+}
+ #textarea {
+    resize: none;
+}
+
+#container-contact .btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+#container-contact .btn-coral {
+    background-color: #3096FE;
+    border-color:#FFBB00;
+    color:#ffffff;
+    box-shadow: 6px 8px 10px #888888;
+  display: block;
+ margin: 0; 
+
+ 
+}
+#container-contact .btn-coral:hover {
+    box-shadow: 3px 1px 5px #888888;
+}
+
+
 /* footer */
 .d-flex {
     display: flex;
