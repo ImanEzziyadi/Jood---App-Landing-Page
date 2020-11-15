@@ -6,25 +6,82 @@ html, body {
     margin: 0;
     padding: 0;
 }
-/* Contact us */
-#Contact  {
+/* Home */
+.container-home  {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+}
+.whitespace {
+    height: 1000px;
+}
+
+#parent {
+    border: 3px solid black;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+}
+
+/* #child { 
+    position: relative;
+    right: 50px;
+    bottom: 50px;
+    border: 2px solid #1487FD;
+    background-color: #1487FD;
+    height: 150px;
+    width: 50%;
+    transition-property: 
+
+
+
+    color: #66caa9;
+    display: flex;
+    justify-content: center;
+}*/
+
+
+
+/* Downlod */
   
+.container-dawnload {
+    padding: 1rem 0;
+    /* position: relative; */
+    display: block;
+    background-color: #1487FD;
+    color: white;
+    margin-left: 10px;
+    width: 100%;
+}
+
+container-dawnload .box-downlod2 {
+    display: block;
+    }
+
+
+
+
+
+
+/* Contact us */
+#Contact { 
     margin: auto;
     /* text-align: center; */
 }
 
-
  #container-contact { 
+     position: relative;
+     align-items: center;
     text-align:center;
-
+    max-width: 100%;
+    margin: auto;
    /* background-color: rgb(240, 41, 51); */
-  
-  
- }
-#text , #email{ 
-    display: inline;
+}
+/* #text , #email{  */
+    /* display: inline; */
 
- } 
+ /* }  */
 #container-contact> h4{
      text-align: center; 
     /* margin: 0; */
@@ -33,21 +90,30 @@ html, body {
  #container-contact > p{
      /* margin: 0; */
     text-align: center;
+    align-items: center; 
 }
+/* form { */
+    /* width: 50%; */
+/* } */
+
+
  #textarea {
     resize: none;
 }
 
+
 #container-contact .btn {
     background-color: transparent;
     border: 1px solid transparent;
-    padding: 1rem 2.5rem;
+    padding:1rem 2.5rem;
     cursor: pointer;
     font-size: 1.1rem;
 
     transition-property: all;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+  
+  
 }
 
 #container-contact .btn-coral {
@@ -122,4 +188,34 @@ a {
 a:hover {
     color: #25E6C8;
     
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media  (min-width: 600px) {
+    .container-dawnload {
+        display: block;
+        justify-content: center;
+        margin:0;
+    
+    }  
+    }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container-dawnload {
+        display: flex;
+        justify-content: center;
+        margin:0;
+    
+    }  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media  (min-width: 992px) {
+    
+    .container-dawnload {
+        display: flex;
+        justify-content: center;
+        margin:0;
+    
+    }  
 }
