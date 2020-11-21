@@ -9,6 +9,7 @@ html, body {
 }
 .vh-100 {
     height: 100vh;
+    width: 100%;
 }
 /* Home */
 .container-home  {
@@ -52,20 +53,32 @@ html, body {
 
 
 /* Downlod */
-  
-.container-dawnload {
-    padding: 1rem 0;
-    /* position: relative; */
-    display: block;
-    background-color: #1487FD;
-    color: white;
-    margin-left: 10px;
-    width: 100%;
-}
 
-container-dawnload .box-downlod2 {
-    display: block;
-    }
+/* }  */
+    
+
+ .mobil img {
+    
+        position: absolute;
+        left: 0px;
+        bottom:50%;
+        z-index: 0;
+        display: block;
+} 
+  
+ .container-dawnload { 
+    /* padding: 1rem 0; */
+   /* position: relative;  */
+   /* display:flex; */
+     background-color: #1487FD; 
+     color: white; 
+    /* margin-left: 10px; */
+     /* width: 100%; */
+ } 
+
+ /* container-dawnload .box-downlod2 {  */
+    /* display: flex; */
+    /* } */
 
 
 
@@ -73,18 +86,24 @@ container-dawnload .box-downlod2 {
 
 
 /* Contact us */
+.content-center {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
 
  
-.container-contact> h4{
+/* .container-contact> h4{ 
      text-align: center; 
      margin: 0;
 }
     
 .container-contact > p{
-     /* margin: 0; */
+     /* margin: 0; 
     text-align: center;
     align-items: center; 
-}
+}*/
 
  #textarea {
     resize: none;
@@ -233,6 +252,12 @@ a:hover {
         display: flex;
         justify-content: center;
         /* margin:0; */
+    } 
+    .App{
+        display: flex;
+    } 
+    .mask {
+        display: flex;
     } 
 
     .container-contact { 
