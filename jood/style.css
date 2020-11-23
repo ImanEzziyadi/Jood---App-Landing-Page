@@ -25,6 +25,35 @@ html, body {
 .whitespace {
     height: 100px;
 }
+/* Application */
+ .stor-number { 
+     font-size:1rem;
+    font-family: 'Roboto', sans-serif;  
+        font-weight: bold;
+    color: #3096FE
+
+}
+  .med-text{ 
+    font-size: 1rem;
+   font-family: 'Roboto', sans-serif; 
+   
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    
+    text-align: center;
+    padding: 20px 0;
+    /* font-size: 30px; */
+  }
+
+
+
 
 /* #parent { 
     border: 3px solid black;
@@ -57,33 +86,41 @@ html, body {
 /* }  */
     
 
- .mobil img {
-    
+ /* .mobil img { 
         position: absolute;
         left: 0px;
         bottom:50%;
         z-index: 0;
         display: block;
-} 
+} */
+    
   
  .container-dawnload { 
-    /* padding: 1rem 0; */
-   /* position: relative;  */
-   /* display:flex; */
+  
      background-color: #1487FD; 
      color: white; 
-    /* margin-left: 10px; */
-     /* width: 100%; */
- } 
-
- /* container-dawnload .box-downlod2 {  */
-    /* display: flex; */
-    /* } */
-
-
-
+        /* background-image: url(images/Mask\ Group\ 1.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;   
+        /* margin: auto;  
+        width: 300;
+        height: 300px;*/
+    }
 
 
+  /* .container-dawnload .content { 
+ padding: 3px;;
+   width:350px;
+   height: 400px;
+   background-color: yellow;
+}*/
+/* .mobil-bild { 
+   height: 400px; 
+/* } */
+ .mobil-image {
+   display: none;
+}
 
 /* Contact us */
 .content-center {
@@ -248,17 +285,24 @@ a:hover {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+     .grid-container {
+        display: flex;
+        
+    } 
     .container-dawnload {
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         /* margin:0; */
     } 
     .App{
         display: flex;
     } 
-    .mask {
+    .mobil-image {
         display: flex;
-    } 
+        height: auto;
+     }
+     
+
 
     .container-contact { 
      height: 100%;
