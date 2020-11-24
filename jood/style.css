@@ -27,29 +27,29 @@ html, body {
     height: 100px;
 }
 /* easy */
-.navbar {
-    margin: 0,5rem 0;
+.EC { 
+    height: 70x;
+    width: 50px;
+    background-image: url(images/ec-logo-mono.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.container-nav {
-    width: 100%;
-    padding: 0 1rem;
-    margin: 0 auto;
+.md-mobil {
+    height: 200px;
+    width: 100px;
+    position: relative;
+    display: none;
+    
 }
 
 
-.navbar-brand {
-    /* display: inline-block; */
-    font-size:3rem;
-    color: black;
-    margin-right: 1rem;  
-}
 .content1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 3px;
+     align-items: center; 
+    gap: 3rem;
+    padding: 5px;
    
 }
  
@@ -60,7 +60,7 @@ html, body {
 }
  
 .content3 {
-    width: 20vw;
+    width: 100%;
 }
 /* Application Screen */
 
@@ -159,7 +159,7 @@ html, body {
      .går-till-höger {
        display: flex;
        margin-right: 10px;
-      margin-left: 250px;
+      margin-left: 200px;
      }
      
 
@@ -173,9 +173,8 @@ html, body {
 /* .mobil-bild { 
    height: 400px; 
 /* } */
- .mobil-image {
-   display: none;
-}
+ 
+
 
 /* Contact us */
 .content-center {
@@ -340,6 +339,20 @@ a:hover {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+    .EC { 
+        height: 60x;
+        width: 140px;
+        background-image: url(images/ec-logo-mono.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .md-mobil {
+        height: 300px;
+        width: 150px;
+        position: relative;
+        display: flex;
+        
+    }
     .container {   
         height: 100%;
         display: block;
