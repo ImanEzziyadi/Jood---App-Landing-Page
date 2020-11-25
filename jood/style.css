@@ -27,10 +27,15 @@ html, body {
     display:flex;
     text-align: center; 
     justify-content: center;
+    padding: 1rem;
 }
 .content2 {
     height: 1rem;
+
 }
+.p {
+    font-size: 10px;
+  }
 .container-nav{
     width: 100%;
     padding: 0 0.5rem;
@@ -45,7 +50,7 @@ html, body {
 
 .nav-link {
     color:white;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-family: 'Roboto Slab', serif;
     padding: 0;
     text-decoration: none;
@@ -53,7 +58,7 @@ html, body {
 .nav-link-1 {
     color: orange;
     text-decoration: underline;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-family: 'Roboto Slab', serif;
     padding: 0;
 }
@@ -67,6 +72,12 @@ html, body {
     /* object-fit: cover;*/ 
     
   }
+  .btn-orng {
+    width: 90px; 
+    height: 25px;
+    background-color: orange;
+    color: white;
+}
 .whitespace {
     height: 100px;
 }
@@ -81,7 +92,7 @@ html, body {
 .md-mobil {
     height: 200px;
     width: 100px;
-    position: relative;
+    /* position: relative; */
     display: none;
     
 }
@@ -92,9 +103,8 @@ html, body {
     flex-direction: row;
     justify-content: center;
      align-items: center; 
-    gap: 3rem;
-    padding: 5px;
-   
+    gap: 1rem;
+    padding: 5px; 
 }
  
 .content2 {
@@ -109,7 +119,7 @@ html, body {
 /* Application Screen */
 
 .container-mobil { 
-    height: 230px;
+    height: 280px;
     width: 150px;
     background-image: url(images/iPhone\ X\ -\ Light.png);
     background-size: cover;
@@ -125,22 +135,26 @@ html, body {
 
 }
   .med-text{ 
-    font-size: 1rem;
+    font-size: 0.8rem;
    font-family: 'Roboto', sans-serif; 
    
 }
  .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto ;
     grid-gap: 10px;
-    padding: 10px;
+    padding: 5px;
     width: 100%;
   }
+  .container-row {
+      display: flex;
+    }
   
   .Application-contaimer   {
     text-align: center;
-    /* padding: 20px 0; */
+     padding: 30px;
     width: 100%;
+    background-color: red;
    
     /* font-size: 30px; */
   }
@@ -383,12 +397,13 @@ a:hover {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+   
     .container-home  {
         background-image: url(images/blue_background_crop.png);
         /* justify-content: center; */
         background-size: cover;
         background-repeat: no-repeat;
-        height:700px;
+        height:750px;
         max-width:900px;
         /* padding: 0 1rem; */
         /* margin: 0 auto; */
@@ -403,10 +418,14 @@ a:hover {
     .container3 {
     display: flex;
     /* justify-content: space-between; */
-    /* padding: 0.5rem 1rem; */
-    /* width: 100%; */
-    /* margin: 0 auto; */
+      padding: 0.5rem 1rem; 
+     width: 100%; 
+     margin: 0 auto; 
     }
+    .content3 {
+        width: 50%;
+    }
+
     .navbar-nav {
         display: flex;
         color:white
@@ -416,7 +435,7 @@ a:hover {
     
     .nav-link {
         color:white;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         font-family: 'Roboto Slab', serif;
         padding: 0;
         text-decoration: none;
@@ -424,9 +443,17 @@ a:hover {
     .nav-link-1 {
         color: orange;
         text-decoration: underline;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         font-family: Arial, Helvetica, sans-serif;
         padding: 0;
+    }
+    .btn-orng {
+        width: 90px; 
+        height: 25px;
+        background-color: orange;
+        color: white;
+        font-size: 6;
+    
     }
     .EC { 
         height: 60x;
@@ -438,17 +465,21 @@ a:hover {
     .md-mobil {
         height: 300px;
         width: 150px;
-        position: relative;
+        /* position: relative; */
         display: flex;
         
     }
     .container {   
-        height: 100%;
+        /* height: 100%; */
         display: block;
         justify-content: center;
         align-items: center;
-        margin:auto;
+        text-align: center;
+         /* margin:auto;  */
         width: 100%;
+        padding: 10px;
+        /* background-color: green; */
+        
     }
     .container-mobil { 
         height: 300px;
@@ -456,13 +487,14 @@ a:hover {
         background-image: url(images/screen.png);
         background-size: cover;
         background-repeat: no-repeat;
+        background-color: yellow;
     }
        
      .Application-contaimer {
         display: block;
         justify-content: center;
         align-items: center;
-       margin: auto; 
+       /* margin: auto;  */
         width: 100%;
     }
 
@@ -474,14 +506,31 @@ a:hover {
     
     
 
-    .grid-container {
+     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
+        grid-gap: 50px;
         padding: 10px;
         width: 100%;
         justify-content: center;
+        align-self: center;
+       background-color:rgb(128, 128, 128)
       }
+      .container-row {
+        display: block;
+      }
+      .stor-number { 
+        font-size:1.7rem;
+       font-family: 'Roboto', sans-serif;  
+           font-weight: bold;
+       color: #3096FE;
+   
+   }
+     .med-text{ 
+       font-size: 1rem;
+      font-family: 'Roboto', sans-serif; 
+      
+   }
       
     
     .container-dawnload {
@@ -529,7 +578,7 @@ a:hover {
         background-size: cover;
         background-repeat: no-repeat;
         height:700px;
-       width: 1200px;
+       width: 1220px;
     }
     .content-home {
         display: flex;
@@ -538,7 +587,44 @@ a:hover {
         /* align-items: center; */
         gap: 1rem;
     }
-    .container {   height: 100%;
+
+    .container3 {
+    display: flex;
+    /* justify-content: space-between; */
+    /* padding: 0.5rem 1rem; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    }
+    .navbar-nav {
+        display: flex;
+        color:white
+         /* flex-direction: column; */
+        
+    }
+    
+    .nav-link {
+        color:white;
+        font-size: 1rem;
+        font-family: 'Roboto Slab', serif;
+        padding: 0;
+        text-decoration: none;
+    }
+    .nav-link-1 {
+        color: orange;
+        text-decoration: underline;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+    }
+    .btn-orng {
+        width: 100px; 
+        height: 30px;
+        background-color: orange;
+        color: white;
+    
+    }
+    .container {  
+         height: 100%;
         display: block;
         justify-content: center;
         align-items: center;
@@ -546,7 +632,7 @@ a:hover {
         width: 100%;
     }
     .container-mobil { 
-        height: 300px;
+        height: 500px;
         width:1200px;
         background-image: url(images/screen.png);
         background-size: cover;
@@ -570,20 +656,38 @@ a:hover {
     }
     
     
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        width: 100%;
-      }
     
     .container-dawnload, container-contact {
         display: flex;
         justify-content: center;
         /* margin:0; */
-    }  
+    } 
+    .container-dawnload {
+        display: flex;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 50px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        background-color: yellow;
+    }
+    .container-row {
+      display: block;
+    }
+    .stor-number { 
+     font-size: 2rem;
+     font-family: 'Roboto', sans-serif;  
+     font-weight: bold;
+     color: #3096FE;
+       
+    }
+    .med-text{ 
+           font-size: 1.5rem;
+          font-family: 'Roboto', sans-serif;
+    }
     /* footer */
     .navbar-nav {
         display: flex;
