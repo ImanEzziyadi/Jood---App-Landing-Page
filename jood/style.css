@@ -25,14 +25,10 @@ html, body {
 }
 .content-home {
     display:flex;
-    /* text-align: center;  */
-    /* justify-content: center; */
     padding: 1rem;
 }
 .content2 {
     height: 1rem;
-    background-color: lightblue;
-
 }
 .container-nav{
     width: 100%;
@@ -41,9 +37,7 @@ html, body {
 }
 
 .navbar-nav {
-    display: flex;
-    /* flex-direction: column; */
-    
+    display: flex; 
 }
 
 .nav-link {
@@ -90,30 +84,31 @@ html, body {
 .md-mobil {
     height: 200px;
     width: 100px;
-    /* position: relative; */
     display: none;
     
 }
-
-
 .content1 {
     display: flex;
     flex-direction: row;
-    /* justify-content: h4; */
-     /* align-items: h4;  */
     gap: 1rem;
     padding: 5px; 
 }
  
 .content2 {
     height: 2rem;
-    /* width: auto; */
-
 }
  
 .content3 {
-    width: 100%;
-    background-color: green;
+    display: block;
+    align-items: center;
+    width:  150;
+    height: 70;
+}
+.content-smal {
+     text-align: center;
+    width: auto;
+    height:70px;
+    display: block;
 }
 /* Application Screen */
 
@@ -128,7 +123,7 @@ html, body {
     transition-timing-function: ease-in-out ;
     cursor: pointer;
 }
-.container-mobil:hover { 
+.container-mobil :hover { 
     background-image: url(images/iPhone\ X\ -\ Light.png);
     box-shadow: 150px 150px 150px black;
 }
@@ -158,7 +153,7 @@ html, body {
     }
   
   .Application-contaimer   {
-    text-align: h4;
+    text-align: center;
      padding: 30px;
     width: 100%;
   }
@@ -167,15 +162,24 @@ html, body {
   
      background-color: #1487FD; 
      color: white; 
-    }
+} 
      
-     .mask-grup {
-        height: 200x;
-        width: 200px;
-        background-image: url(images/Mask\ Group\ 1.png);
+ .md-mask-grub {
+    height: 290px;
+    width: 150px;
+        background-image: url(images/iPhone\ X\ -\ Light.png);
         background-size: cover;
         background-repeat: no-repeat;
-    } 
+        transition-duration: 00.25s;
+        transition-timing-function: ease-in-out ;
+        cursor: pointer;
+    }
+
+    .md-mask-grub :hover  { 
+        background-image: url(images/Mask\ Group\ 1.png);
+        box-shadow: 150px 150px 150px black;
+    }
+    
 /* Contact us */
 .content-center {
     margin: auto;
@@ -199,7 +203,6 @@ html, body {
 .About {
     background-color: transparent;
     border: 1px solid transparent;
-    /* padding: 1rem 2.5rem; */
     cursor: pointer;
     font-size: 1rem;
 
@@ -260,7 +263,6 @@ html, body {
 .navbar-nav {
     display: flex;
        flex-direction: column;  
-      /* margin-left: 0.5rem;  */  
       justify-content: space-between; 
        margin: auto;  
     font-size: small;
@@ -278,7 +280,6 @@ a {
     background-color: transparent;
     text-transform: uppercase;
     font-size: 400;
-   /* margin-left: 2rem; */
    margin: 0 1rem;
 
 }
@@ -292,7 +293,6 @@ a:hover {
    
     .container-home  {
         background-image: url(images/blue_background_crop.png);
-        /* justify-content: center; */
         background-size: cover;
         background-repeat: no-repeat;
         height:500px;
@@ -303,36 +303,29 @@ a:hover {
     .content-home {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-between; */
-        /* align-items: center; */
         gap: 1rem; 
     }
     .content1 {
         display: flex;
         flex-direction: row;
-        /* justify-content: h4; */
-         /* align-items: h4;  */
         gap: 1rem;
         padding: 5px; 
     }
-    /* .container3 { */
-    /* display: flex; */
-    /* justify-content: space-between; */
-      /* padding: 0.5rem 1rem;  */
-     /* width: 100%;  */
-     /* margin: 0 auto;  */
-     /* background-color: green; */
-    /* } */
     .content3 {
-        width: 50%;
+        display: block;
+        width: 50%; 
         padding: 0;
+        margin: 0;
+    }
+    .content-smal {
+        text-align: center;
+        width: 70px;
+        height: 50px;
     }
 
     .navbar-nav {
         display: flex;
-        color:white
-         /* flex-direction: column; */
-        
+        color:white  
     }
     
     .nav-link {
@@ -379,17 +372,30 @@ a:hover {
         25%  {background-color:yellow; left:200px; top:0px;}
         100% {background-color: gray; left:0px; top:0px;}
       }
+      .md-mask-grub {
+        height: 300px;
+        width: 150px;
+        background-image: url(images/iPhone\ X\ -\ Light.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition-property:  all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out ;
+        cursor: pointer;
+    }
 
+    .md-mask-grub :hover { 
+
+        background-image: url(images/Mask\ Group\ 1.png);
+    }  
+   
     .container {   
-        /* height: 100%; */
         display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
-         /* margin:auto;  */
         width: 100%;
         padding: 10px;
-        /* background-color: green; */
         
     }
     .container-mobil { 
@@ -414,17 +420,13 @@ a:hover {
         display: block;
         justify-content: center;
         align-items: center;
-       /* margin: auto;  */
         width: 100%;
     }
 
     .content-center {
-        /* margin: auto; */
         text-align: center;
         align-items: center;
     }
-    
-    
 
      .grid-container {
         display: grid;
@@ -434,7 +436,6 @@ a:hover {
         width: 100%;
         justify-content: center;
         align-self: center;
-       background-color:rgb(128, 128, 128)
       }
       .container-row {
         display: block;
@@ -448,16 +449,21 @@ a:hover {
    }
      .med-text{ 
        font-size: 1rem;
-      font-family: 'Roboto', sans-serif; 
-      
+      font-family: 'Roboto', sans-serif;  
    }
-      
     
     .container-dawnload {
-        display: flex;
-        /* justify-content: center; */
-        /* margin:0; */
+        background-color: #1487FD; 
+        color: white; 
     } 
+    .md-mask-grub { 
+        height: 600px;
+        width:500px;
+        background-image: url(images/mobil-group1.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
     .App{
         display: flex;
     } 
@@ -465,8 +471,6 @@ a:hover {
         display: flex;
         height: auto;
      }
-     
-
 
     .container-contact { 
      height: 100%;
@@ -490,7 +494,7 @@ a:hover {
     .p {
       font-size: medium;
     }
- }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media  (min-width: 992px) {
@@ -506,31 +510,24 @@ a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        /* align-items: center; */
         gap: 1rem;
     }
     .content1 {
         display: flex;
         flex-direction: row;
-        /* justify-content: h4; */
-         /* align-items: h4;  */
         gap: 1rem;
         padding: 5px; 
     }
 
     .content3 {
-    display: flex;
-    /* justify-content: space-between; */
-    /* padding: 0.5rem 1rem; */
-    /* width: 100%; */
-    /* margin: 0 auto; */
-    padding: 0;
+        display: block;
+        width: 50%; 
+        padding: 0;
+        margin: 0;
     }
     .navbar-nav {
         display: flex;
         color:white
-         /* flex-direction: column; */
-        
     }
     
     .nav-link {
@@ -569,6 +566,13 @@ a:hover {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    .container-mobil { 
+        height: 500px;
+        width:1200px;
+        background-image: url(images/screen.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
     
     .Application-contaimer {
@@ -591,10 +595,14 @@ a:hover {
     .container-dawnload {
         display: flex;
         justify-content: center;
-        /* margin:0; */
     } 
-    .container-dawnload {
-        display: flex;
+    .md-mask-grub { 
+        height: 600px;
+        width:500px;
+        background-image: url(images/mobil-group1.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
     }
     .grid-container {
         display: grid;
@@ -603,7 +611,6 @@ a:hover {
         padding: 10px;
         width: 100%;
         justify-content: center;
-        background-color: yellow;
     }
     .container-row {
       display: block;
@@ -619,6 +626,7 @@ a:hover {
            font-size: 1.5rem;
           font-family: 'Roboto', sans-serif;
     }
+   
     /* footer */
     .navbar-nav {
         display: flex;
@@ -645,22 +653,18 @@ a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        /* align-items: center; */
         gap: 1rem;
     }
 
     .content3 {
-    display: flex;
-    /* justify-content: space-between; */
-    /* padding: 0.5rem 1rem; */
-    /* width: 100%; */
-    /* margin: 0 auto; */
+        display: block;
+        width: 50%; 
+        padding: 0;
+        margin: 0;
     }
     .navbar-nav {
         display: flex;
         color:white
-         /* flex-direction: column; */
-        
     }
     
     .nav-link {
@@ -691,7 +695,6 @@ a:hover {
         align-items: center;
         margin:auto;
         width: 100%;
-        background-color: rosybrown;
     }
     .container-mobil { 
         height: 500px;
@@ -699,6 +702,14 @@ a:hover {
         background-image: url(images/screen.png);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .md-mask-grub { 
+        height: 600px;
+        width:500px;
+        background-image: url(images/mobil-group.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
     }
 
     
@@ -710,21 +721,16 @@ a:hover {
         margin:auto;
         width: 100%;
     }
-
     .content-center {
         margin: auto;
         text-align: center;
         align-items: center;
     }
-    
+
     .container-dawnload{
         display: flex;
         justify-content: center;
-        /* margin:0; */
     } 
-    .container-dawnload {
-        display: flex;
-    }
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -732,7 +738,6 @@ a:hover {
         padding: 10px;
         width: 100%;
         justify-content: center;
-        background-color: yellow;
     }
     .container-row {
       display: block;
